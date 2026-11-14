@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b5vmel01rfdoi"]
+
+[ext_resource type="Texture2D" uid="uid://c2tbq3tvc7myo" path="res://3d-star-icon-isolated-on-background-customer-rating-feedback-concept-3d-rendering-free-png.webp" id="1_46ao5"]
+[ext_resource type="Script" path="res://star.gd" id="2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v0skk"]
+radius = 42.047592
+
+[node name="Star" type="Area2D" unique_id=121781350 groups=["star"]]
+script = ExtResource("2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=561368960]
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("1_46ao5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1607600439]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_v0skk")
